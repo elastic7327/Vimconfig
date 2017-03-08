@@ -40,13 +40,15 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 "nmap <leader>n :tabnew<CR>
 "nmap <leader>d :tabclose<CR>
 "nmap <leader>q :bp <BAR> bd #<CR>
+
+
 noremap  {  :tabprevious<CR>
 noremap  }  :tabnext<CR>
 noremap  +  :tabnew<CR>
-noremap  _  :tabclose<CR>
-noremap  D  :tabclose<CR>
-
-
+noremap  _  :bd<CR>
+"noremap  _  :bd<CR>
+noremap  D  :bd<CR>
+"noremap  D  :tabclose<CR>
 
 noremap  J  :wincmd j<CR>
 noremap  K  :wincmd k<CR>
@@ -243,3 +245,5 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+
+set nobackup
